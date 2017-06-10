@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SegmentCell" rowHeight="65" id="KGk-i7-Jjw" customClass="SegmentCell" customModule="Chat" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="54"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="54"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="nHA-D1-efR">
+                        <rect key="frame" x="0.0" y="8" width="343" height="35"/>
+                        <color key="backgroundColor" red="0.23605859279999999" green="0.45357757809999999" blue="0.70768171550000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="343" id="gW1-h6-lqz"/>
+                            <constraint firstAttribute="height" constant="34" id="oRj-w5-Eco"/>
+                        </constraints>
+                        <segments>
+                            <segment title="Chat"/>
+                            <segment title="LiveChat"/>
+                        </segments>
+                        <color key="tintColor" red="0.61294180149999999" green="0.72367936369999997" blue="0.85624682900000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layout.cornerRadius">
+                                <integer key="value" value="15"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </segmentedControl>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="nHA-D1-efR" secondAttribute="bottom" constant="10" id="7gp-pz-8is"/>
+                    <constraint firstItem="nHA-D1-efR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="BHE-5Y-9VH"/>
+                    <constraint firstAttribute="bottom" secondItem="nHA-D1-efR" secondAttribute="bottom" constant="10" id="Mee-wj-jCK"/>
+                    <constraint firstAttribute="trailing" secondItem="nHA-D1-efR" secondAttribute="trailing" constant="16" id="SFR-02-UoR"/>
+                    <constraint firstItem="nHA-D1-efR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="X9O-IV-9wA"/>
+                    <constraint firstItem="nHA-D1-efR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="eMA-T3-Peh"/>
+                    <constraint firstAttribute="trailing" secondItem="nHA-D1-efR" secondAttribute="trailing" constant="16" id="rrb-Ob-62e"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="segment" destination="nHA-D1-efR" id="gcK-Ys-Brc"/>
+            </connections>
+            <point key="canvasLocation" x="6.5" y="8.5"/>
+        </tableViewCell>
+    </objects>
+</document>
