@@ -18,7 +18,7 @@
                         <viewControllerLayoutGuide type="top" id="Vww-Pw-heC"/>
                         <viewControllerLayoutGuide type="bottom" id="BGq-YG-oLU"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="vln-0u-cqX">
+                    <view key="view" contentMode="scaleToFill" id="vln-0u-cqX" customClass="ChatView" customModule="Chat" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -121,14 +121,10 @@
                                             <outlet property="nameLabel" destination="m7w-dP-jAd" id="CgQ-mf-lVd"/>
                                             <outlet property="timeLabel" destination="Mce-Xd-Gzu" id="9h8-Pb-1JK"/>
                                             <outlet property="unreadLabel" destination="jZ4-hG-7Xy" id="jqC-Ui-fRi"/>
-                                            <outlet property="userpic" destination="b52-oN-8gb" id="pDs-SQ-6JJ"/>
+                                            <outlet property="userpicImageView" destination="b52-oN-8gb" id="ded-9z-nBt"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
-                                <connections>
-                                    <outlet property="dataSource" destination="8Cn-hC-9wB" id="4MT-FX-wC1"/>
-                                    <outlet property="delegate" destination="8Cn-hC-9wB" id="53n-B8-y0n"/>
-                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -141,11 +137,11 @@
                             <constraint firstItem="ePl-JM-cSQ" firstAttribute="top" secondItem="b3C-QH-zad" secondAttribute="bottom" constant="8" symbolic="YES" id="a98-aB-6FL"/>
                             <constraint firstItem="ePl-JM-cSQ" firstAttribute="leading" secondItem="vln-0u-cqX" secondAttribute="leading" id="bBg-35-Ztu"/>
                         </constraints>
+                        <connections>
+                            <outlet property="tableView" destination="ePl-JM-cSQ" id="qq6-xo-tdF"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" title="Chat" id="6GT-aj-g5j"/>
-                    <connections>
-                        <outlet property="tableView" destination="ePl-JM-cSQ" id="4sj-OE-kWz"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wSM-jG-See" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
