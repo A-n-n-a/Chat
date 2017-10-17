@@ -49,7 +49,7 @@ class APIService {
             },
             completion: completion
         )
-    }
+    } 
     
     public func channels(of user: User, completion: @escaping (User) -> ()) {
         DispatchQueue.backgroundAsync(
